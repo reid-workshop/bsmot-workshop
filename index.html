@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beyond Short-term MOT – ECCV 2026 Workshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="header-inner">
+    <p class="workshop-venue">ECCV 2026 Workshop &mdash; TBD, 2026</p>
+    <h1>Beyond Short-term MOT:<br>Long-term Tracking, Re-identification<br>and Identity Association</h1>
+    <p class="header-sub">In conjunction with the European Conference on Computer Vision (ECCV) 2026</p>
+  </div>
+</header>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#home">Home</a>
+    <a href="#cfp">Call for Papers</a>
+    <a href="#challenge">Challenge</a>
+    <a href="#submission">Submission</a>
+    <a href="#organization">Organization</a>
+    <a href="#program">Program</a>
+    <a href="#keynotes">Keynotes</a>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+
+  <!-- HOME -->
+  <section id="home">
+    <h2>Home</h2>
+
+    <div class="home-intro">
+      <p>
+        Multi-object tracking has seen remarkable progress, yet most benchmarks focus on short sequences
+        where targets remain visible briefly. In real-world deployments, targets may be present for several
+        minutes, repeatedly entering and leaving camera views, changing appearance, and moving across
+        non-overlapping cameras. This workshop addresses the gap between short-term benchmarks and
+        real-world long-term multi-camera tracking.
+      </p>
+    </div>
+
+    <p>
+      While retail analytics serves as a primary motivating application, the methods explored are broadly
+      relevant to smart spaces, autonomous systems, sports analysis, and any domain requiring persistent
+      identity reasoning. The workshop also hosts a competition that evaluates data association in isolation,
+      providing fixed per-frame detections and asking participants to assign consistent identities across
+      two synchronized cameras over 30-minute sequences in a real retail setting.
+    </p>
+
+    <div class="highlights">
+      <div class="highlight-card">
+        <div class="icon">&#128196;</div>
+        <h4>Paper Track</h4>
+        <p>Submit research papers on long-term tracking, re-ID, and identity association</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">&#127942;</div>
+        <h4>Challenge</h4>
+        <p>Data association competition with fixed detections across dual synchronized cameras</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">&#127897;</div>
+        <h4>Invited Talks</h4>
+        <p>4 invited keynote speakers from leading institutions</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">&#128172;</div>
+        <h4>Panel Discussion</h4>
+        <p>The future of long-term identity association in computer vision</p>
+      </div>
+    </div>
+
+    <h3>Important Dates</h3>
+    <table class="dates-table">
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paper submission deadline</td>
+          <td class="tbd">TBD</td>
+        </tr>
+        <tr>
+          <td>Notification of acceptance</td>
+          <td class="tbd">TBD</td>
+        </tr>
+        <tr>
+          <td>Camera-ready deadline</td>
+          <td class="tbd">TBD</td>
+        </tr>
+        <tr>
+          <td>Challenge data release</td>
+          <td class="tbd">TBD</td>
+        </tr>
+        <tr>
+          <td>Challenge submission deadline</td>
+          <td class="tbd">TBD</td>
+        </tr>
+        <tr>
+          <td>Workshop day</td>
+          <td class="tbd">TBD, 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- CALL FOR PAPERS -->
+  <section id="cfp">
+    <h2>Call for Papers</h2>
+
+    <p>
+      We invite submissions of original research papers on topics related to long-term multi-object tracking,
+      re-identification, and identity association. The workshop welcomes both theoretical contributions and
+      applied systems work. Accepted papers will be presented as orals or posters at the workshop.
+    </p>
+
+    <h3>Topics of Interest</h3>
+    <p>Topics include but are not limited to:</p>
+    <ul class="topics-list">
+      <li>Long-term single and multi-camera tracking</li>
+      <li>Video-based person re-identification</li>
+      <li>Data association strategies for tracking-by-detection</li>
+      <li>Appearance modeling and representation learning for re-ID</li>
+      <li>Re-identification under occlusion and blur</li>
+      <li>Privacy-preserving tracking and re-identification</li>
+      <li>Graph-based identity association methods</li>
+      <li>Transformer-based tracking architectures</li>
+      <li>Self-supervised methods for learning association cues</li>
+      <li>Domain adaptation and generalization for tracking</li>
+      <li>Foundation models for tracking and re-ID</li>
+      <li>Tracklet linking and trajectory reconstruction</li>
+      <li>Effect of frame rate on tracking performance</li>
+      <li>Real-time and online tracking methods</li>
+      <li>Evaluation metrics for data association</li>
+      <li>Multi-camera tracking systems</li>
+    </ul>
+
+    <h3>Paper Format</h3>
+    <p>
+      Submissions must follow the ECCV 2026 paper format. Papers should be submitted in PDF format
+      using the official ECCV LaTeX or Word template. We accept two types of submissions:
+    </p>
+    <ul>
+      <li><strong>Regular papers:</strong> Up to 14 pages (excluding references)</li>
+      <li><strong>Short papers / extended abstracts:</strong> Up to 4 pages (excluding references)</li>
+    </ul>
+    <p>
+      All submissions will be peer-reviewed by at least two members of the program committee.
+      Accepted papers will be included in the ECCV 2026 workshop proceedings.
+    </p>
+
+    <h3>Review Process</h3>
+    <p>
+      Reviews will be double-blind. Authors must anonymize their submissions. Supplementary material
+      may be submitted alongside the paper and will be reviewed at the discretion of the reviewers.
+    </p>
+  </section>
+
+  <!-- CHALLENGE -->
+  <section id="challenge">
+    <h2>Challenge</h2>
+
+    <p>
+      In addition to the paper track, the workshop hosts a competition specifically designed to evaluate
+      <strong>data association methods in isolation</strong>. Unlike existing MOT benchmarks, which conflate
+      detection quality and association performance, this challenge provides participants with fixed per-frame
+      detections and instance masks, asking them to assign consistent identities across two synchronized
+      camera views.
+    </p>
+
+    <div class="challenge-box">
+      <strong>Key distinguishing feature:</strong> By fixing the detection input, the challenge enables
+      a fair and direct comparison of association strategies, allowing the community to study the impact
+      of frame rate, observation duration, and cross-camera appearance variation on identity consistency—in
+      isolation, for the first time.
+    </div>
+
+    <h3>Research Questions</h3>
+    <ul>
+      <li>
+        Assuming instances of persons have been detected using a strong detector model, what is the best
+        data association strategy to achieve both temporal intra-camera tracking and inter-camera re-identification?
+      </li>
+      <li>
+        What is the impact of the frame rate on the performance of the data association step in a
+        multi-target multi-camera (MTMC) algorithm?
+      </li>
+      <li>
+        Assuming reliable single-camera tracking has been applied on a sequence, what is the best strategy
+        to associate the tracklets of an individual from different cameras?
+      </li>
+    </ul>
+
+    <h3>Dataset</h3>
+    <p>
+      The dataset consists of two synchronized camera sequences showing customers at a restaurant ordering
+      food, waiting for their order, and picking up their food. On average, customers are present in the
+      scene for 2–4 minutes. All visible faces are blurred to preserve privacy.
+    </p>
+    <p>
+      The dataset is split into blocks of approximately 30 minutes each. A total of
+      <strong>45 annotated blocks</strong> are available:
+    </p>
+    <ul>
+      <li><strong>33 blocks</strong> with both input and ground truth will be made available to participants</li>
+      <li><strong>12 blocks</strong> are reserved for evaluation (unpublished ground truth)</li>
+    </ul>
+
+    <h3>Input Data Provided to Participants</h3>
+    <ul>
+      <li>
+        A two-camera sequence captured at <strong>10 fps</strong>. For each timestamp, two frames are
+        available (left and right camera). Average block duration is 30 minutes.
+      </li>
+      <li>
+        For each frame, bounding boxes and segmentation masks of all visible persons, provided in
+        standard <strong>COCO JSON format</strong> (unique instance ID, bounding box, category ID,
+        and run-length encoded segmentation mask). Detections are produced using a MogaNet-S backbone
+        with Mask R-CNN pre-trained on ImageNet-1K.
+      </li>
+      <li>
+        Ground truth: each person is associated with a unique ID across all bounding boxes containing
+        an image of that person.
+      </li>
+    </ul>
+
+    <h3>Evaluation Metrics</h3>
+    <p>
+      Submissions are evaluated using the association components of the
+      <strong>HOTA metric</strong>. Participants submit CSV files with their predicted identity assignments
+      over the test sequences. All submissions are ranked by <strong>AssA</strong> (Association Accuracy).
+    </p>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-name">AssA</div>
+        <div class="metric-desc">Primary ranking metric. Geometric mean of AssPr and AssRe.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">AssPr</div>
+        <div class="metric-desc">Association Precision: how well predicted trajectories track the same GT trajectory.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">AssRe</div>
+        <div class="metric-desc">Association Recall: how well predicted trajectories cover GT trajectories.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">IDSW</div>
+        <div class="metric-desc">Identity Switch: counts wrongful identity swaps along predicted trajectories.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">FRAG</div>
+        <div class="metric-desc">Fragmentation: counts the number of predicted trajectories per ground-truth identity.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMISSION -->
+  <section id="submission">
+    <h2>Submission</h2>
+
+    <h3>Paper Submission</h3>
+    <p>
+      Papers must be submitted through the official workshop submission system (link to be announced).
+      All submissions must follow the ECCV 2026 author guidelines and use the official conference template.
+    </p>
+    <ol class="submission-steps">
+      <li>
+        <strong>Prepare your manuscript</strong> using the ECCV 2026 LaTeX or Word template.
+        Ensure anonymization for double-blind review.
+      </li>
+      <li>
+        <strong>Format check</strong>: verify page limits (14 pages for regular, 4 pages for short papers,
+        excluding references), figure quality, and that no author information is disclosed.
+      </li>
+      <li>
+        <strong>Submit via CMT / OpenReview</strong> (link TBD) before the submission deadline.
+        Supplementary material may be uploaded alongside the main paper.
+      </li>
+      <li>
+        <strong>Await review notification</strong>. Authors of accepted papers will be asked to prepare
+        a camera-ready version and register for the workshop.
+      </li>
+    </ol>
+
+    <h3>Challenge Submission</h3>
+    <p>
+      Challenge participants must submit CSV files containing their data association results over the
+      provided test sequences. Detailed submission format specifications and the evaluation server
+      link will be announced when the challenge opens.
+    </p>
+    <ul>
+      <li>Submissions are evaluated against unpublished ground truth by the organizers</li>
+      <li>Multiple submissions per team may be allowed (limit TBD)</li>
+      <li>Teams must provide a short technical report describing their method</li>
+      <li>Top-ranked teams will be invited to present their approach at the workshop</li>
+    </ul>
+
+    <h3>Contact</h3>
+    <p>
+      For questions regarding submissions, please contact the organizers at:
+      <a href="mailto:wassim.elahmar@uottawa.ca">wassim.elahmar@uottawa.ca</a>
+    </p>
+  </section>
+
+  <!-- ORGANIZATION -->
+  <section id="organization">
+    <h2>Organization</h2>
+
+    <p>
+      The organizing team combines expertise in multi-object tracking, re-identification, multi-spectral vision,
+      and retail analytics, with proven workshop organization experience. The team spans four countries across
+      three continents, bridging academia and industry.
+    </p>
+
+    <div class="organizers-grid">
+
+      <div class="organizer-card">
+        <h4>Robert Lagani&egrave;re</h4>
+        <div class="affiliation">University of Ottawa, Canada</div>
+        <p>
+          25+ years in computer vision, ~200 publications in video analysis, surveillance, and tracking.
+          Co-founder of Tempo Analytics and Sensor Cortek. Author of the OpenCV Cookbook.
+          The challenge dataset originates from his retail analytics work.
+        </p>
+      </div>
+
+      <div class="organizer-card">
+        <h4>Wassim El Ahmar</h4>
+        <div class="affiliation">University of Ottawa, Canada</div>
+        <p>
+          Ph.D. focused on multi-object tracking in thermal and RGB domains. Introduced the first
+          large-scale thermal MOT dataset. Co-organized the TP-MOT Challenge at PBVS/CVPR 2025.
+        </p>
+      </div>
+
+      <div class="organizer-card">
+        <h4>Guillaume-Alexandre Bilodeau</h4>
+        <div class="affiliation">Polytechnique Montr&eacute;al, Canada</div>
+        <p>
+          Director of the LITIV lab. Extensive work on object tracking, person re-identification,
+          and urban traffic monitoring. Published at CVPR, ICCV, ECCV, IEEE TITS, and Pattern Recognition.
+        </p>
+      </div>
+
+      <div class="organizer-card">
+        <h4>Angel D. Sappa</h4>
+        <div class="affiliation">Computer Vision Center, Barcelona, Spain &amp; ESPOL, Ecuador</div>
+        <p>
+          200+ publications in cross-spectral vision. Co-founder of VINTRA Inc. Co-organizer of
+          PBVS at CVPR since 2019. Served as Program Chair, Conference Chair, and Associate Editor
+          of Pattern Recognition.
+        </p>
+      </div>
+
+      <div class="organizer-card">
+        <h4>Riad I. Hammoud</h4>
+        <div class="affiliation">Plus AI, Santa Clara, USA</div>
+        <p>
+          Ph.D. from INRIA. Experience at BAE Systems and TuSimple on DARPA projects.
+          Co-chairs PBVS since 2004 (22 editions). Served as general chair of SPIE ATR (2018&ndash;2021).
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROGRAM -->
+  <section id="program">
+    <h2>Program</h2>
+
+    <p>
+      The workshop is a <strong>full-day event</strong> accommodating both the paper track and the challenge track,
+      along with 4 invited keynote talks and a panel discussion. The program includes 6 oral presentations,
+      a poster session running across both coffee breaks (6&ndash;10 accepted papers), and a dedicated session
+      for challenge results.
+    </p>
+
+    <div class="program-session">
+      <h3>Morning Session</h3>
+      <table class="program-table">
+        <tbody>
+          <tr>
+            <td>09:00 &ndash; 09:15</td>
+            <td>Opening remarks</td>
+          </tr>
+          <tr class="talk-row">
+            <td>09:15 &ndash; 10:00</td>
+            <td>Invited Talk 1 <em>(speaker TBD)</em></td>
+          </tr>
+          <tr>
+            <td>10:00 &ndash; 10:30</td>
+            <td>Oral presentations &mdash; 2 papers</td>
+          </tr>
+          <tr class="break-row">
+            <td>10:30 &ndash; 11:00</td>
+            <td>Coffee break &amp; poster session</td>
+          </tr>
+          <tr class="talk-row">
+            <td>11:00 &ndash; 11:45</td>
+            <td>Invited Talk 2 <em>(speaker TBD)</em></td>
+          </tr>
+          <tr>
+            <td>11:45 &ndash; 12:15</td>
+            <td>Oral presentations &mdash; 2 papers</td>
+          </tr>
+          <tr class="break-row">
+            <td>12:15 &ndash; 13:30</td>
+            <td>Lunch break</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="program-session">
+      <h3>Afternoon Session</h3>
+      <table class="program-table">
+        <tbody>
+          <tr class="talk-row">
+            <td>13:30 &ndash; 14:15</td>
+            <td>Invited Talk 3 <em>(speaker TBD)</em></td>
+          </tr>
+          <tr>
+            <td>14:15 &ndash; 14:45</td>
+            <td>Oral presentations &mdash; 2 papers</td>
+          </tr>
+          <tr class="break-row">
+            <td>14:45 &ndash; 15:15</td>
+            <td>Coffee break &amp; poster session</td>
+          </tr>
+          <tr class="challenge-row">
+            <td>15:15 &ndash; 16:00</td>
+            <td>Challenge results presentation and analysis</td>
+          </tr>
+          <tr class="talk-row">
+            <td>16:00 &ndash; 16:45</td>
+            <td>Invited Talk 4 <em>(speaker TBD)</em></td>
+          </tr>
+          <tr class="panel-row">
+            <td>16:45 &ndash; 17:15</td>
+            <td>Panel discussion: <em>The future of long-term identity association</em></td>
+          </tr>
+          <tr>
+            <td>17:15 &ndash; 17:30</td>
+            <td>Challenge awards &amp; closing remarks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- KEYNOTES -->
+  <section id="keynotes">
+    <h2>Keynotes</h2>
+
+    <p>
+      The workshop will feature four invited keynote talks from leading researchers in multi-object tracking,
+      re-identification, and related fields. Confirmed speakers will be announced as they are finalized.
+    </p>
+
+    <div class="keynote-card">
+      <div class="keynote-number">1</div>
+      <div class="keynote-info">
+        <h4>Invited Speaker 1</h4>
+        <div class="keynote-affil">Affiliation TBD</div>
+        <p>Talk title and abstract to be announced.</p>
+      </div>
+    </div>
+
+    <div class="keynote-card">
+      <div class="keynote-number">2</div>
+      <div class="keynote-info">
+        <h4>Invited Speaker 2</h4>
+        <div class="keynote-affil">Affiliation TBD</div>
+        <p>Talk title and abstract to be announced.</p>
+      </div>
+    </div>
+
+    <div class="keynote-card">
+      <div class="keynote-number">3</div>
+      <div class="keynote-info">
+        <h4>Invited Speaker 3</h4>
+        <div class="keynote-affil">Affiliation TBD</div>
+        <p>Talk title and abstract to be announced.</p>
+      </div>
+    </div>
+
+    <div class="keynote-card">
+      <div class="keynote-number">4</div>
+      <div class="keynote-info">
+        <h4>Invited Speaker 4</h4>
+        <div class="keynote-affil">Affiliation TBD</div>
+        <p>Talk title and abstract to be announced.</p>
+      </div>
+    </div>
+
+    <div class="tba-note">
+      Confirmed keynote speakers will be announced as they are finalized. We are committed to ensuring
+      diverse representation across career stage, geography, and research perspective.
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>
+    <strong>Beyond Short-term MOT: Long-term Tracking, Re-identification and Identity Association</strong><br>
+    ECCV 2026 Workshop &mdash; European Conference on Computer Vision<br>
+    Organized by University of Ottawa &middot; Polytechnique Montr&eacute;al &middot; Computer Vision Center Barcelona &middot; ESPOL &middot; Plus AI
+  </p>
+</footer>
+
+<!-- ===== SCROLL SPY ===== -->
+<script>
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+
+  function onScroll() {
+    let current = '';
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top <= 80) current = sec.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>
